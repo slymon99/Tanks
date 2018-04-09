@@ -41,8 +41,8 @@ public class Ball {
             dy = 0;
             theta = -theta;
         }
-        if (y + (int) dy + this.radius * 2 > Game.HEIGHT - 23) {
-            y = Game.HEIGHT - 23 - this.radius * 2;
+        if (y + (int) dy + this.radius * 2 > Game.HEIGHT) {
+            y = Game.HEIGHT - this.radius * 2;
             dy = 0;
             theta = -theta;
         }

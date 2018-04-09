@@ -10,8 +10,8 @@ public class Game extends JPanel{
 
     private World theWorld;
 
-    public Game(){
-        theWorld = new World();
+    public Game(World theWorld){
+        this.theWorld = theWorld;
 
         Timer update = new Timer(1000/120, (ActionEvent e) -> {
             gameLoop();
@@ -26,11 +26,6 @@ public class Game extends JPanel{
             public void run() {
                 while (true) {
                     repaint();
-//                    try {
-//                        Thread.sleep(1);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
                 }
             }
 
